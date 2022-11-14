@@ -88,7 +88,7 @@ class Kv:
 
         return response
 
-    def procces(self, html_text):
+    def process(self, html_text):
         soup = BeautifulSoup(html_text, 'lxml')
         del html_text
 
