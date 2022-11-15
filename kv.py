@@ -74,7 +74,7 @@ class Kv:
 
         return d
 
-    def proccesFile(self):
+    def processFile(self):
         if self.filename is None:
             return
 
