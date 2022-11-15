@@ -42,7 +42,7 @@ class Kv:
         d['id'] = _id
 
         _date = p_head.find("a", class_="wi_date").text
-        d['head']['date'] = _date
+        d['head']['date'] = _date + ' (MSK)'
 
         _link = p_head.find("a", class_="wi_date").get("href")
         d['head']['link'] = self.kv_url + _link
@@ -64,7 +64,7 @@ class Kv:
             d['body']['orig_head']['author'] = _orig_author
 
             _orig_date = p_orig.find("a", class_='pic_desc_a').text
-            d['body']['orig_head']['date'] = _orig_date
+            d['body']['orig_head']['date'] = _orig_date + ' (MSK)'
 
             _orig_link = p_orig.find("a", class_='pic_desc_a').get("href")
             d['body']['orig_head']['link'] = self.kv_url + _orig_link
